@@ -1,7 +1,9 @@
 function flipPairs(input) {
     // your code here
-    
-}
+    let result = input.replace(/(\w)(\w)/g, '$2$1');
+    return result;
+} 
+
 
 let input = "Can you see what this is about?";
 let output = flipPairs(input);
